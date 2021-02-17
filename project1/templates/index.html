@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+
+  <h1>Log in</h1>
+
+  <form action="{{url_for('login')}}" method="post">
+    <div class="form-group">
+      <input class="form-control" username="username" placeholder="Username">
+      <input class="form-control" password="password" placeholder="password">
+    </div>
+
+
+    <div class="form-group">
+      <button class="btn btn-primary">Log in </button>
+    </div>
+  </form>
+
+<p>If you don't have a account currently, please sign up for it</p>
+<a href="signup.html">Sign Up</a>
+
+
+
+
+<p>If you want to search for a book, please type the name of the book in the following box </p>
+
+<form action="{{url_for('search')}}" method="post">
+  <div class="form-group">
+    <input class="form-control" bookname="bookname" placeholder="book">
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary">Search</button>
+  </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
